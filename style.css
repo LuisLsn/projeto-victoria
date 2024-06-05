@@ -9,8 +9,28 @@ h2,h4{
     font-family: comfortaa;
 }
 img{
-    width: 100px;
-    height: 100px;
+    width: 107px;
+    height: 107px;
     float: right;
     border-radius: 100px;
+}
+h3{
+    color: rgb(202, 82, 102);
+    font-family: comfortaa;
+}
+button{
+    font-family: comfortaa;
+    background-color: rgb(202, 82, 102);
+    color: white;
+    width: 170px;
+    border-radius: 100px;
+}
+p{
+    text-align: center;
+}
+
+h1{
+    color: rgb(202, 82, 102);
+    font-family: comfortaa;
+    text-align: center;
 }

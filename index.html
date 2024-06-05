@@ -9,46 +9,103 @@
     <title>site novo</title>
 </head>
 <body>
-    
+
+
     <nav style="background-color: rgb(202, 82, 102);">
 
         <div class="nav-wrapper">
 
-          <a href="#" class="brand-logo right"><img src="logotipo-clinica-de-estetica.png" alt="img"></a>
+          <a href="index.html" class="brand-logo right"><img src="logotipo-clinica-de-estetica.png" alt="img"></a>
 
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <ul id="nav-mobile" class="left hide-on-med-and-down">  
+
+            <li><a href="login.html">Login</a></li>
 
             <li><a href="index.html">Pagina incial</a></li>
             <li><a href="paises.html">Paises</a></li>
             <li><a href="procedimentos.html">Procedimentos</a></li>
             <li><a href="equipe.html">Nossa equipe</a></li>
+            
+         </ul>
 
-          </ul>
-        </div>
       </nav>
-    
+
          <h2>Cuidar de voce é um ato de amor próprio!</h2>
          <h4>Busque sua melhor versão</h4>
+          
+         <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="rosto mulher.jpeg">
+              <div class="caption left-align">
+                <h3>Harmonizações Faciais!</h3>
+                <h5 class="light white-text text-lighten-3">Saiba quando é indicada e como é feita</h5>
+              </div>
+            </li>
+            <li>
+              <img src="imagem 1.jpeg"> 
+              <div class="caption center-align">
+                <h3>Toxina Botulínica</h3>
+                <h5 class="light white-text text-lighten-3">Te ajudando a melhorar sua aparencia</h5>
+              </div>
+            </li>
+            <li>
+              <img src="imagem 2.jpeg"> 
+              <div class="caption right-align">
+                <h3>Bichectomia</h3>
+                <h5 class="light white-text text-lighten-3">Deixando o rosto mais fino e alongado</h5>
+              </div>
+            </li>
+            <li>
+              <img src="imagem.jpg"> 
+              <div class="caption center-align">
+                <h3>Harmonização full face</h3>
+                <h5 class="light white-text text-lighten-3">Preenchimento facial de forma não cirurgica</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-         <div class="row">
-            <div class="col s12 m6">
+
+         <div class="row container">
               <div class="card pink">
+                
                 <div class="card-content white-text">
-                  <span class="card-title">Me conheça</span>
-                  <p>Formada desde 2024 em uma das melhores universidades do mundo!
+                  <span class="card-title center-align">Entre em contato comigo!</span>
+                  <p>Formada e atuando desde 2024 em uma das melhores universidades do mundo!
                   </p>
                 </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+
+                <div class="card-action center-align">
+                  <button id="wpp" >Meu Whatsapp</button>
+                  <button id="wpp2">Whatsapp empresa</button>
                 </div>
+
               </div>
-            </div>
           </div>
+          
+          <script>
+            document.getElementById("wpp").addEventListener("click", function () {
+              const telefone1 = '5511967412990';
+              const mensagem = 'Ola, estou entrando em contato via o site';
+              const url = `https://wa.me/${telefone1}?text=${encodeURIComponent(mensagem)}`
+              window.open(url, '_blank');
+            });
+            
+            document.getElementById("wpp").style.width = "155px"
+
+            document.getElementById("wpp2").addEventListener("click", function () {
+              const telefone2 = '5511999521389';
+              const mensagem = 'Ola, estou entrando em contato via o site';
+              const url2 = `https://wa.me/${telefone2}?text=${encodeURIComponent(mensagem)}`
+              window.open(url2, '_blank');
+            });
+          </script>
           
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="./script.js"></script>
+    
 </body>
 </html>
