@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="stylelogin.css">
+
     <title>site novo</title>
 
 </head>
@@ -16,7 +18,7 @@
 
         <div class="nav-wrapper">
 
-          <a href="index.html" class="brand-logo right"><img src="logotipo-clinica-de-estetica.png" alt="img"></a>
+          <a href="index.html" class="brand-logo right"><img src="imagens/logotipo-clinica-de-estetica.png" alt="img"></a>
 
         <ul id="nav-mobile" class="left hide-on-med-and-down">  
 
@@ -24,49 +26,61 @@
 
             <li><a href="index.html">Pagina incial</a></li>
             <li><a href="paises.html">Paises</a></li>
-            <li><a href="procedimentos.html">Procedimentos</a></li>
-            <li><a href="equipe.html">Nossa equipe</a></li>
+           
+            
             
          </ul>
 
       </nav>
 
-    <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">Primeiro nome</label>
+      <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crie sua conta</h1>
+                <div class="social-icons">
+                  <div class="social-icons">
+                    <a href="https://web.facebook.com/?locale=pt_BR&_rdc=1&_rdr" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank" class="icon"><i class="fab fa-instagram instagram-bold"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="icon"><i class="fab fa-youtube youtube-bold"></i></a>
+                </div>
+                </div>
+                <span>ou use seu E-mail para se registrar</span>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button>Registre-se</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Login</h1>
+                <div class="social-icons">
+                  <a href="https://web.facebook.com/?locale=pt_BR&_rdc=1&_rdr" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/accounts/login/" target="_blank" class="icon"><i class="fab fa-instagram instagram-bold"></i></a>
+                  <a href="https://www.youtube.com/" target="_blank" class="icon"><i class="fab fa-youtube youtube-bold"></i></a>
+                </div>
+                <span>ou use seu email e senha</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="#">Esqueceu sua senha?</a>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo!</h1>
+                    <p>Insira seus dados pessoais para usar todos os recursos do site!</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Ola amigo!</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos os recursos do site!</p>
+                    <button class="hidden" id="register">Registre-se</button>
+                </div>
             </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Sobrenome</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="telefone" type="number" class="validate">
-              <label for="disabled">Telefone</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">Senha</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-            <button id="submit">
-              
-            </button>
-          </div>
-        </form>
-      </div>
-
+        </div>
+    </div>
 
 
 

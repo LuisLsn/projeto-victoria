@@ -1,36 +1,102 @@
+/* Importação das fontes do Google */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-ul{
+
+/* Estilos para elementos gerais */
+ul {
     color: rgb(202, 82, 102);
-    font-family: comfortaa;
+    font-family: 'Comfortaa', sans-serif;
 }
-h2,h4{
+
+h2, h4 {
     text-align: center;
     color: rgb(202, 82, 102);
-    font-family: comfortaa;
+    font-family: 'Comfortaa', sans-serif;
 }
-img{
+
+img {
     width: 107px;
     height: 107px;
     float: right;
     border-radius: 100px;
 }
-h3{
+
+h3 {
     color: rgb(202, 82, 102);
-    font-family: comfortaa;
+    font-family: 'Comfortaa', sans-serif;
 }
-button{
-    font-family: comfortaa;
-    background-color: rgb(202, 82, 102);
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-action {
+    padding-top: 10px;
+}
+
+button {
+    font-family: 'Comfortaa', cursive;
+    background-color: black;
     color: white;
     width: 170px;
+    height: 25px;
+    border: none;
     border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.50s ease;
 }
-p{
+
+button:hover {
+    background-color: #CA5266;
+}
+
+p {
     text-align: center;
 }
 
-h1{
+h1 {
     color: rgb(202, 82, 102);
-    font-family: comfortaa;
+    font-family: 'Comfortaa', sans-serif;
     text-align: center;
 }
+
+/* Estilos para ícones das redes sociais */
+.social-icons {
+    margin: 20px auto; /* Centraliza horizontalmente */
+    text-align: center;
+}
+
+.social-icons a {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.instagram-bold {
+    font-weight: bold;
+}
+
+.youtube-bold {
+    font-weight: bold;
+}
+
+.social-icons .icon {
+    color: black;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.social-icons .icon:hover {
+    color: #CA5266;
+}
+

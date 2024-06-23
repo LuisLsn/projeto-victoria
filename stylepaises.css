@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+nav {
+    position: fixed; /* Fixa a navbar na parte superior */
+    width: 100%; /* Ocupa toda a largura disponível */
+    top: 0; /* Coloca no topo da página */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+}
+
+img{
+    width: 107px;
+    height: 107px;
+    float: right;
+    border-radius: 100px;
+}
+
+
+
+ul {
+    color: rgb(202, 82, 102);
+    font-family: 'Comfortaa', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(202, 82, 102);
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 70px;
+    
+}
+
+h4 {
+    text-align: center;
+    color: rgb(202, 82, 102);
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 30px;
+}
+
+img {
+    width: 107px;
+    height: 107px;
+    float: right;
+    border-radius: 100px;
+}
+
+h3 {
+    color: wheat;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.card {
+    background-color: #DF7888;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    height: 100%;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-visit {
+    background-color: black;
+    color: white;
+    width: 35%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-visit:hover {
+    background-color: #CA5266; /* Altere para a cor desejada ao passar o mouse */
+}
+
+.btn-visit i {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        margin-bottom: 50px;
+    }
+}
+
+.section-divider {
+    border-top: 5px solid #ccc;
+    
+}
+
